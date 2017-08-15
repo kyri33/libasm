@@ -84,4 +84,78 @@ int main()
     printf("'%c' is ascii: %i\n", str_isascii4, ft_isascii(str_isascii4));
     printf("END OF ISASCII TEST *****\n\n");
 //END ISASCII
+
+//ISPRINT TEST
+    printf("***** ISPRINT TEST\n");
+    char    str_isprint = ' ';
+    char    str_isprint2 = '~';
+    int     str_isprint3 = 25;
+    int     str_isprint4 = 127;
+    printf("'%c' is print: %i\n", str_isprint, ft_isprint(str_isprint));
+    printf("'%c' is print: %i\n", str_isprint2, ft_isprint(str_isprint2));
+    printf("'%c' is print: %i\n", str_isprint3, ft_isprint(str_isprint3));
+    printf("'%c' is print: %i\n", str_isprint4, ft_isprint(str_isprint4));
+    printf("END OF ISPRINT TEST *****\n\n");
+//END ISPRINT TEST
+
+//TOUPPER TEST
+    printf("***** TOUPPER TEST\n");
+    char    str_toupper = 'a';
+    char    str_toupper2 = 'i';
+    char    str_toupper3 = 'G';
+    char    str_toupper4 = '7';
+    printf("'%c' to upper case: '%c'\n", str_toupper, ft_toupper(str_toupper));
+    printf("'%c' to upper case: '%c'\n", str_toupper2, ft_toupper(str_toupper2));
+    printf("'%c' to upper case: '%c'\n", str_toupper3, ft_toupper(str_toupper3));
+    printf("'%c' to upper case: '%c'\n", str_toupper4, ft_toupper(str_toupper4));
+    printf("END OF TOUPPER TEST *****\n\n");
+//END OF TOUPPER TEST
+
+//TOLOWER TEST
+    printf("***** TOLOWER TEST\n");
+    char    str_tolower = 'A';
+    char    str_tolower2 = 'I';
+    char    str_tolower3 = 'g';
+    char    str_tolower4 = '7';
+    printf("'%c' to lower case: '%c'\n", str_tolower, ft_tolower(str_tolower));
+    printf("'%c' to lower case: '%c'\n", str_tolower2, ft_tolower(str_tolower2));
+    printf("'%c' to lower case: '%c'\n", str_tolower3, ft_tolower(str_tolower3));
+    printf("'%c' to lower case: '%c'\n", str_tolower4, ft_tolower(str_tolower4));
+    printf("END OF TOLOWER TEST *****\n\n");
+//END OF TOLOWER TEST
+
+//PUTS TEST
+    ft_puts("***** PUTS TEST");
+    char *c = NULL;
+    char str_puts[] = "Hello World!";
+    ft_puts(c);
+    ft_puts(str_puts);
+    ft_puts("Testing 123456789");
+    ft_puts("END OF PUTS TEST *****\n");
+    //printf("\nlength is %lu \n", ft_strlen("HEllo World !"));
+//END OF PUTS TEST
+
+//MEMSET TEST
+    printf("***** MEMSET TEST\n");
+    char str_mem[5];
+    ft_memset(&str_mem, 'K', 5);
+    printf("Set value 'K' 5 times: %s\n", str_mem);
+    printf("END OF MEMSET TEST *****\n\n");
+//END OF MEMSET TEST
+
+//MEMCPY TEST
+    printf("***** MEMCPY TEST\n");
+    char    str_cpy[] = "HELLO";
+    ft_memcpy(&str_mem, &str_cpy, 5);
+    printf("Copied Memory to previous string : '%s'\n", str_mem);
+    printf("END OF MEMCPY TEST *****\n\n");
+//END OF MEMCPY TEST
+    printf("***** STRDUP TEST\n");
+    char    *str_strdup = "Hello Motto !";
+    char    *str_duplicate;
+    str_duplicate = ft_strdup(str_strdup);
+    printf("Duplicated string %s\n", str_duplicate);
+    //free (str_duplicate);
+    printf("END OF STRDUP TEST *****\n\n");
+//STRDUP TEST
 }

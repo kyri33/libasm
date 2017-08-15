@@ -12,7 +12,9 @@ SRC = main.c
 
 SRCO = main.o
 
-ASMSRC = ft_bzero.s ft_strlen.s ft_strcat.s ft_isalpha.s ft_isdigit.s ft_isalnum.s ft_isascii.s
+ASMSRC = ft_bzero.s ft_strlen.s ft_strcat.s ft_isalpha.s ft_isdigit.s 			\
+ 			ft_isalnum.s ft_isascii.s ft_isprint.s ft_toupper.s ft_tolower.s	\
+			 ft_puts.s ft_memset.s ft_memcpy.s ft_strdup.s
 
 ASMO = $(ASMSRC:.s=.o)
 
