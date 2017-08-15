@@ -20,5 +20,5 @@ _ft_strdup:
     pop     rsi
     call    _ft_memcpy
 
-    leave
+    leave   ; Restore stack to original
     ret

@@ -52,10 +52,10 @@ int main()
     char    str_isdigit2 = '9';
     char    str_isdigit3 = 'Z';
     char    str_isdigit4 = 'a';
-    printf("'%c' is digit: %i\n", str_isalpha, ft_isalpha(str_isalpha));
-    printf("'%c' is digit: %i\n", str_isalpha2, ft_isalpha(str_isalpha2));
-    printf("'%c' is digit: %i\n", str_isalpha3, ft_isalpha(str_isalpha3));
-    printf("'%c' is digit: %i\n", str_isalpha4, ft_isalpha(str_isalpha4));
+    printf("'%c' is digit: %i\n", str_isdigit, ft_isdigit(str_isdigit));
+    printf("'%c' is digit: %i\n", str_isdigit2, ft_isdigit(str_isdigit2));
+    printf("'%c' is digit: %i\n", str_isdigit3, ft_isdigit(str_isdigit3));
+    printf("'%c' is digit: %i\n", str_isdigit4, ft_isdigit(str_isdigit4));
     printf("END OF ISDIGIT TEST *****\n\n");
 //END ISDIGIT
 
@@ -150,6 +150,8 @@ int main()
     printf("Copied Memory to previous string : '%s'\n", str_mem);
     printf("END OF MEMCPY TEST *****\n\n");
 //END OF MEMCPY TEST
+
+//STRDUP TEST
     printf("***** STRDUP TEST\n");
     char    *str_strdup = "Hello Motto !";
     char    *str_duplicate;
@@ -157,5 +159,15 @@ int main()
     printf("Duplicated string %s\n", str_duplicate);
     //free (str_duplicate);
     printf("END OF STRDUP TEST *****\n\n");
-//STRDUP TEST
+//END OF STRDUP TEST
+
+//CAT TEST
+    printf("***** CAT TEST\n");
+    printf("Catting 'test.txt':\n\n");
+    int fd = open("text.txt", O_RDONLY);
+    ft_cat(fd);
+    printf("\n Catting STDIN\n");
+    ft_cat(0);
+    printf("END OF CAT TEST\n\n");
+//END OF CAT TEST
 }
