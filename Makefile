@@ -1,6 +1,6 @@
 NAME = libfts.a
 
-NASM = /usr/local/bin/nasm
+NASM = $(HOME)/.brew/bin/nasm
 
 GCC = gcc
 
